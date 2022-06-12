@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id = "container">
+        <div class="logoSection">
+            <div class = "logoDiv">Kingdom Roller Doors</div>
+        </div>
+        
+        <div class="contentSection">
+            <div class="contentTop">
+                <div>
+                    <h1>Kingdom Roller Doors Quotation form.</h1>
+                    <br>
+                    <p>Please fill in the following form and
+                        we will get back to you with a quote.
+                    </p>
+                </div>
+            </div>
+            <div class="contentMiddle">
+                <div class="form-section">
+                    <form action="" method="post" id="accountForm">
+                        <label for="firstName">First Name
+                            <input type="text" id="firstName" name="firstName" required>
+                            <div id="firstNameError" class="error"></div>
+                        </label>
+                        <label for="lastName">Last Name
+                            <input type="text" id="lastName" name="lastName" required>
+                            <div id="lastNameError" class="error"></div>
+                        </label>
+                        <label for="email">Email 
+                            <input type="email" id="email" name="email" required autocomplete="off">
+                            <div id="emailError" class="error"></div>
+                        </label>
+                        <label for="phoneNumber">Phone Number
+                            <input type="tel" id="phoneNumber" name="phoneNumber" 
+                            required pattern="[0-9]{10}">
+                            <div id="phoneError" class="error"></div>
+                        </label>
+                        <label for='door-type'>Door Type Required:
+                            <select id='door-type' name='door-type'>
+                                <option value='non-insulated'>Non-Insulated Roller Door</option>
+                                <option value='insulated'>Insulated Roller Door</option>
+                                <option value='sectional'>Sectional Door</option>
+                                <option value='industrial'>Industrial Door</option>
+                                <option value='security'>Security Shutters</option>
+                              </select>
+                        </label>
+                        <label for='insulated'>Insulated:
+                            <select id='insulated' name='insulated'>
+                                <option value='yes'>Yes</option>
+                                <option value='no'>No</option>
+                            </select>
+                        </label>
+                        <label for='colour'>Colour
+                            <select id='colour' name='colour'>
+                                <option value='black'>Black</option>
+                                <option value='white'>White</option>
+                                <option value='blue'>Blue</option>
+                            </select>
+                        </label>
+                        <label for='opening-size'>Opening Size
+                            <input id='opening-size' name='opening-size-width' type='text' placeholder="Width" style="margin-bottom: 10px;"/>
+                            <input id='opening-size' name='opening-size-height' class="opening-size-height" type='text' placeholder="Height"/>
+                        </label>
+                        <label for="measurement">What is the measurement from the bottom 
+                            of the Lintol to the underside of the ceiling or joists?
+                            <input id='measurement' name='measurement' type='text'/>
+                        </label>
+                        <label for="entry">Is there another
+                            means of entry to the garage apart from the main garage door?
+                            <select id='entry' name='another-entry'>
+                                <option value='entry'>Yes</option>
+                                <option value='entry'>No</option>
+                            </select>
+                        </label>
+                        <div>
+                            <button type="submit" id="submitButton" form="accountForm">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="submitContent">
+                <div>
+                    <!-- <button type="submit" id="submitButton" form="accountForm">Submit</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
